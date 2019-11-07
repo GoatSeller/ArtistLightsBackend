@@ -59,7 +59,7 @@ router.post(
       .trim()
       .escape()
   ],
-  upload.single('file'),
+  upload.single(options),
   (
     req: express.Request,
     res: express.Response,
