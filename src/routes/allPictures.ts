@@ -22,7 +22,6 @@ router.get(
         });
       }
       res.send(attrazioni);
-      console.log(req);
     });
   }
 );
