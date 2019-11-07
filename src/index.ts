@@ -1,10 +1,13 @@
-import express from "express";
-import router from "./routes/allPictures";
+import express from 'express';
+import router from './routes/allPictures';
 
-let index: express.Application = express();
+let app: express.Application = express();
 
-index.use(router);
+app.set('view engine', 'ejs');
 
-index.listen(8000, () => {
-  console.log("Server started");
+app.use(express.static('./views'));
+app.use(router);
+
+app.listen(8000, () => {
+  console.log('Server started');
 });

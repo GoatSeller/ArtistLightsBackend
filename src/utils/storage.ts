@@ -11,7 +11,7 @@ const storage: multer.StorageEngine = multer.diskStorage({
   }
 });
 
-const upload: multer.Instance = multer({ storage: storage });
+const upload: any = multer({ storage: storage });
 
 // The path of image storing
 const storagePath: string = path.join(__dirname, '../pictures/');

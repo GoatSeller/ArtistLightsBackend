@@ -1,6 +1,8 @@
 import express from 'express';
 import fs from 'fs';
 import { options, storagePath, upload } from '../utils/storage';
+import { check } from 'express-validator';
+import ejs from 'ejs';
 
 const router: express.Router = express.Router();
 
@@ -26,6 +28,10 @@ router.get(
   }
 );
 
+router.get('/file', (req: express.Request, res: express.Response) => {
+  res.render('index');
+});
+
 /**
  * Retrieve a picture
  */
@@ -47,18 +53,24 @@ router.get(
  */
 router.post(
   '/upload',
-  upload.single(options),
+  [
+    check('file')
+      .isEmpty()
+      .trim()
+      .escape()
+  ],
+  upload.single('file'),
   (
     req: express.Request,
     res: express.Response,
     next: express.NextFunction
   ): void => {
-    const file = req.body.file;
+    const file = req.file;
     res.send(
       JSON.stringify({
         message: 'Picture stored correctly.',
-        filename: file.filename,
-        url: req.headers.origin + req.baseUrl + '/' + file.filename
+        filename: file.originalname,
+        url: req.headers.host + '/pictures/' + file.originalname
       })
     );
   }
