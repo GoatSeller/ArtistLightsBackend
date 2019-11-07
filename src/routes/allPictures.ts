@@ -3,6 +3,7 @@ import fs from 'fs';
 import { options, storagePath, upload } from '../utils/storage';
 import { check } from 'express-validator';
 import ejs from 'ejs';
+import multer from 'multer';
 
 const router: express.Router = express.Router();
 
@@ -59,7 +60,7 @@ router.post(
       .trim()
       .escape()
   ],
-  upload.single(options),
+  upload.single('file'),
   (
     req: express.Request,
     res: express.Response,

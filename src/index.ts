@@ -6,7 +6,7 @@ let app: express.Application = express();
 app.set('view engine', 'ejs');
 
 app.use(express.static('./views'));
-
+/*
 app.use(
   (req: express.Request, res: express.Response, next: express.NextFunction) => {
     const err: any = new Error('Not found');
@@ -28,6 +28,7 @@ app.use(
     });
   }
 );
+ */
 
 app.use(router);
 
