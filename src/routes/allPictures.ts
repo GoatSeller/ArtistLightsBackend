@@ -66,14 +66,18 @@ router.post(
     res: express.Response,
     next: express.NextFunction
   ): void => {
-    const file = req.file;
-    res.send(
-      JSON.stringify({
-        message: 'Picture stored correctly.',
-        filename: file.originalname,
-        url: req.headers.host + '/pictures/' + file.originalname
-      })
-    );
+    try {
+      const file = req.file;
+      res.send(
+        JSON.stringify({
+          message: 'Picture stored correctly.',
+          filename: file.originalname,
+          url: req.headers.host + '/pictures/' + file.originalname
+        })
+      );
+    } catch (err) {
+      res.send('Error');
+    }
   }
 );
 
