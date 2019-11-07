@@ -14,7 +14,7 @@ router.get(
     res: express.Response,
     next: express.NextFunction
   ): void => {
-    fs.readdir(storagePath, (err, files) => {
+    fs.readdir(storagePath, (err, files): void => {
       const attrazioni: Array<any> = [];
       for (let f of files) {
         attrazioni.push({
@@ -37,7 +37,7 @@ router.get(
     res: express.Response,
     next: express.NextFunction
   ): void => {
-    res.sendFile(storagePath + req.params.name, (err: Error) => {
+    res.sendFile(storagePath + req.params.name, (err: Error): void => {
       if (err) res.sendStatus(400);
     });
   }

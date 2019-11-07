@@ -3,10 +3,10 @@ import sha256 from 'sha256';
 import path from 'path';
 
 const storage: multer.StorageEngine = multer.diskStorage({
-  destination: (req, file, callback) => {
+  destination: (req, file, callback): void => {
     callback(null, './pictures/');
   },
-  filename: (req, file, callback) => {
+  filename: (req, file, callback): void => {
     callback(null, sha256(new Date().toISOString()) + file.originalname);
   }
 });
