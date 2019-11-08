@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bc5eaa6-e85b-474c-8c49-9548f8db8e09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/routes/routes/fileRoute.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/routes/getAll.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/routes/getOne.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/routes/upload.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/allPictures.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/routes/fileRoute.ts" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +59,8 @@
       <workItem from="1573144307271" duration="1451000" />
       <workItem from="1573146135260" duration="7008000" />
       <workItem from="1573213822025" duration="1369000" />
-      <workItem from="1573215210549" duration="121000" />
+      <workItem from="1573215210549" duration="198000" />
+      <workItem from="1573220836718" duration="100000" />
     </task>
     <servers />
   </component>
