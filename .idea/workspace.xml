@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bc5eaa6-e85b-474c-8c49-9548f8db8e09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/routes/routes/fileRoute.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/routes/getAll.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/routes/getOne.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/routes/upload.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/allPictures.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/allPictures.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/allPictures.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +29,11 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\AlfredPC\Desktop\Progetto Typescript\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AlfredPC\Desktop\GITHUB\ArtistLightsBackend\src\routes\routes" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -49,6 +59,8 @@
       <updated>1573144304992</updated>
       <workItem from="1573144307271" duration="1451000" />
       <workItem from="1573146135260" duration="7008000" />
+      <workItem from="1573213822025" duration="1369000" />
+      <workItem from="1573215210549" duration="121000" />
     </task>
     <servers />
   </component>
@@ -60,7 +72,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
